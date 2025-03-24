@@ -1,0 +1,27 @@
+name: Dubizzle Leads Fetcher
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+  workflow_dispatch:
+
+jobs:
+  fetch_leads:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r cron/requirements.txt
+
+      - name: Run Dubizzle Leads Script
+        run: python cron/fetch_emails.py
