@@ -1,6 +1,2 @@
-imaplib
 email
 requests
-json
-re
-time

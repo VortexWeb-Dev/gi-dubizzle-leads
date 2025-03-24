@@ -12,7 +12,7 @@ EMAIL_ACCOUNT = "dubizzleleads@giproperties.ae"
 PASSWORD = "ws6c_.Hph.wv_}_"
 
 # PHP Script URL
-PHP_SCRIPT_URL = "https://lightgray-kudu-834713.hostingersite.com/gi-test/index.php"
+PHP_SCRIPT_URL = "https://ec2-gicrm.ae/gi-dubizzle-leads/index.php"
 
 # Allowed sender
 ALLOWED_SENDER = "no-reply@email.dubizzle.com"
